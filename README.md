@@ -17,9 +17,23 @@ Continuously discovers content worth creating for a niche or website. A three-st
 
 ## Installation
 
-The three skills live at `Skills/seo-research/`, `Skills/keyword-clustering/`, and `Skills/content-planner/` inside this project folder — they are not installed globally. If moving this project to another Zo Computer, copy this whole `Zo-Automations/seo-opportunity-finder/` folder, or unzip the packaged `*.skill` files into that workspace's own project-local `Skills/` folder.
+### Fast path (recommended)
 
-(Optional) Connect Google Search Console under Integrations if you want site-specific query data for a website you own.
+1. Open a **new Zo chat**.
+2. Paste the entire contents of `installation-prompt.md` from this repo, with the repo URL filled in (it defaults to `https://github.com/robort-gabriel/seo-opportunity-finder` — swap it if you're installing from a fork).
+3. Send it. The AI will fetch this repo into `Zo-Automations/seo-opportunity-finder/` on your Zo, verify the three skills, create a dedicated "SEO Opportunity Finder" persona scoped to this project, and ask whether to run the pipeline ad hoc and/or schedule it as a recurring automation — confirming with you before creating anything that runs unsupervised.
+
+This is the whole install: no packages, no build step, no API keys.
+
+### Manual path
+
+If you'd rather install by hand:
+
+1. Clone or download this repo.
+2. Copy the whole folder into your Zo workspace at `/home/workspace/Zo-Automations/seo-opportunity-finder/`, preserving the structure below. The three skills must stay project-local at `Skills/seo-research/`, `Skills/keyword-clustering/`, `Skills/content-planner/` — they are not installed globally, and moving them elsewhere breaks the project's scoping.
+3. (Optional) In a chat, ask Zo to create a persona for this project (see `installation-prompt.md`, step 3, for the exact scope/instructions to give it) so you don't have to restate the pipeline every time.
+4. (Optional) Connect Google Search Console under Integrations if you want site-specific query data for a website you own — this is the only optional integration; no other API key is required or supported.
+5. Try it: paste one of the examples from `starter-prompts.md` into a chat.
 
 ## Configuration
 
@@ -47,6 +61,7 @@ content-planner       -> editorial-calendar.md, blog-outlines.md, titles.md, int
 ```
 Zo-Automations/seo-opportunity-finder/
 ├── README.md
+├── installation-prompt.md            # paste into a new chat to auto-install everything
 ├── automation-prompt.md              # instructions for the scheduled agent
 ├── starter-prompts.md                # example prompts
 ├── seo-research.skill                # packaged copy, for portability
