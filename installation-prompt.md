@@ -18,11 +18,9 @@ Do the following, in order. Steps marked **(confirm)** must not proceed until I 
   ```
   README.md
   installation-prompt.md
+  persona.md
   automation-prompt.md
   starter-prompts.md
-  seo-research.skill
-  keyword-clustering.skill
-  content-planner.skill
   Skills/seo-research/SKILL.md
   Skills/keyword-clustering/SKILL.md
   Skills/content-planner/SKILL.md
@@ -36,12 +34,9 @@ Do the following, in order. Steps marked **(confirm)** must not proceed until I 
 
 ### 3. Create a dedicated persona
 
-- **(confirm)** the name and scope below with me before creating anything.
-- Create a persona named **"SEO Opportunity Finder"** (via the persona-creation tool) with a system prompt stating:
-  - It operates only within `/home/workspace/Zo-Automations/seo-opportunity-finder/` (reading its `Skills/`, `automation-prompt.md`, `starter-prompts.md`) and `/home/workspace/Content/SEO-Opportunities/` (writing outputs) — it must not touch other projects or folders.
-  - Its job is to run the three-stage pipeline on request: `seo-research` → `keyword-clustering` → `content-planner`, following each stage's `SKILL.md` exactly, handing off through the files each stage produces.
-  - It never uses paid or external SEO APIs — only `web_search`, `web_research`, `x_search`, and (if connected) the Google Search Console catalog integration for sites the user owns. It never fabricates search volume, difficulty, or GSC numbers.
-  - For phrasing and behavior patterns, it should follow `starter-prompts.md` (ad hoc requests) and `automation-prompt.md` (recurring runs) in the project folder.
+- **(confirm)** the name and scope with me before creating anything.
+- Read `persona.md` in the repo and use its content verbatim: the `Name` field as the persona name, the `Prompt` field as the persona's system prompt. Do not paraphrase or shorten it.
+- Create the persona (via the persona-creation tool) with that exact name and prompt text.
 - After creating it, ask me whether to switch to it now (set it active) or leave it available to select later.
 
 ### 4. Offer to set up recurring automation

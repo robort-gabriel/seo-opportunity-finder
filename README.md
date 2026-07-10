@@ -31,7 +31,7 @@ If you'd rather install by hand:
 
 1. Clone or download this repo.
 2. Copy the whole folder into your Zo workspace at `/home/workspace/Zo-Automations/seo-opportunity-finder/`, preserving the structure below. The three skills must stay project-local at `Skills/seo-research/`, `Skills/keyword-clustering/`, `Skills/content-planner/` — they are not installed globally, and moving them elsewhere breaks the project's scoping.
-3. (Optional) In a chat, ask Zo to create a persona for this project (see `installation-prompt.md`, step 3, for the exact scope/instructions to give it) so you don't have to restate the pipeline every time.
+3. (Optional) In a chat, ask Zo to create a persona for this project using the exact text in `persona.md` so you don't have to restate the pipeline every time.
 4. (Optional) Connect Google Search Console under Integrations if you want site-specific query data for a website you own — this is the only optional integration; no other API key is required or supported.
 5. Try it: paste one of the examples from `starter-prompts.md` into a chat.
 
@@ -62,11 +62,9 @@ content-planner       -> editorial-calendar.md, blog-outlines.md, titles.md, int
 Zo-Automations/seo-opportunity-finder/
 ├── README.md
 ├── installation-prompt.md            # paste into a new chat to auto-install everything
+├── persona.md                        # exact text for the dedicated "SEO Opportunity Finder" persona
 ├── automation-prompt.md              # instructions for the scheduled agent
 ├── starter-prompts.md                # example prompts
-├── seo-research.skill                # packaged copy, for portability
-├── keyword-clustering.skill          # packaged copy, for portability
-├── content-planner.skill             # packaged copy, for portability
 └── Skills/
     ├── seo-research/
     │   └── SKILL.md
