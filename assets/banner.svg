@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="132" viewBox="0 0 560 132" role="img" aria-labelledby="title desc">
+  <title id="title">SEO Opportunity Finder</title>
+  <desc id="desc">Zo Computer automation: seo-research, keyword-clustering, and content-planner pipeline for continuous SEO content discovery.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#0c4a6e"/>
+    </linearGradient>
+  </defs>
+  <rect width="560" height="132" rx="14" fill="url(#bg)"/>
+  <rect x="1.5" y="1.5" width="557" height="129" rx="12.5" fill="none" stroke="#38bdf8"/>
+  <g transform="translate(24 30)" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5">
+    <circle cx="18" cy="16" r="10" stroke="#f97316"/>
+    <line x1="25.5" y1="23.5" x2="35" y2="33" stroke="#f97316"/>
+  </g>
+  <g transform="translate(88 40)">
+    <rect x="8" y="36" width="10" height="20" fill="#7c3aed"/>
+    <rect x="22" y="22" width="10" height="34" fill="#2563eb"/>
+    <rect x="36" y="10" width="10" height="46" fill="#16a34a"/>
+  </g>
+  <text x="156" y="58" fill="#f0f9ff" font-family="system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="22" font-weight="700">SEO Opportunity Finder</text>
+  <text x="156" y="84" fill="#bae6fd" font-family="system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="13" font-weight="500">Continuous SEO Content Discovery for Zo Computer</text>
+  <text x="156" y="106" fill="#fde68a" font-family="system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="12" font-weight="600" letter-spacing="0.5">RESEARCH &#183; CLUSTER &#183; PLAN</text>
+</svg>
