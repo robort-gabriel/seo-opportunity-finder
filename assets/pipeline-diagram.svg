@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="176" viewBox="0 0 560 176" role="img" aria-labelledby="ptitle pdesc">
+  <title id="ptitle">SEO Opportunity Finder pipeline</title>
+  <desc id="pdesc">Three stage pipeline: research trending keywords, cluster into topics, plan an editorial calendar.</desc>
+  <rect width="560" height="176" rx="14" fill="#0f172a"/>
+  <rect x="1.5" y="1.5" width="557" height="173" rx="12.5" fill="none" stroke="#334155"/>
+  <text x="280" y="28" fill="#7dd3fc" text-anchor="middle" font-family="system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="11" font-weight="700" letter-spacing="1.5">CONTINUOUS SEO CONTENT DISCOVERY</text>
+
+  <!-- Stage 1: RESEARCH -->
+  <g transform="translate(24 44)">
+    <rect width="150" height="96" rx="10" fill="#1e293b" stroke="#f97316" stroke-width="1.5"/>
+    <text x="75" y="24" fill="#fdba74" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" font-weight="700" letter-spacing="0.5">RESEARCH</text>
+    <text x="75" y="46" fill="#e2e8f0" text-anchor="middle" font-family="system-ui,sans-serif" font-size="9.5">Trending questions +</text>
+    <text x="75" y="60" fill="#e2e8f0" text-anchor="middle" font-family="system-ui,sans-serif" font-size="9.5">keyword competition</text>
+    <text x="75" y="82" fill="#94a3b8" text-anchor="middle" font-family="system-ui,sans-serif" font-size="9">seo-research</text>
+  </g>
+
+  <path d="M180 92 L 202 92" stroke="#f97316" stroke-width="2" fill="none" marker-end="url(#arrow1)"/>
+
+  <!-- Stage 2: CLUSTER -->
+  <g transform="translate(206 44)">
+    <rect width="150" height="96" rx="10" fill="#1e293b" stroke="#7c3aed" stroke-width="1.5"/>
+    <text x="75" y="24" fill="#c4b5fd" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" font-weight="700" letter-spacing="0.5">CLUSTER</text>
+    <text x="75" y="46" fill="#e2e8f0" text-anchor="middle" font-family="system-ui,sans-serif" font-size="9.5">Group by shared</text>
+    <text x="75" y="60" fill="#e2e8f0" text-anchor="middle" font-family="system-ui,sans-serif" font-size="9.5">search intent</text>
+    <text x="75" y="82" fill="#94a3b8" text-anchor="middle" font-family="system-ui,sans-serif" font-size="9">keyword-clustering</text>
+  </g>
+
+  <path d="M362 92 L 384 92" stroke="#7c3aed" stroke-width="2" fill="none" marker-end="url(#arrow2)"/>
+
+  <!-- Stage 3: PLAN -->
+  <g transform="translate(388 44)">
+    <rect width="150" height="96" rx="10" fill="#1e293b" stroke="#2563eb" stroke-width="1.5"/>
+    <text x="75" y="24" fill="#93c5fd" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" font-weight="700" letter-spacing="0.5">PLAN</text>
+    <text x="75" y="46" fill="#e2e8f0" text-anchor="middle" font-family="system-ui,sans-serif" font-size="9.5">Editorial calendar +</text>
+    <text x="75" y="60" fill="#e2e8f0" text-anchor="middle" font-family="system-ui,sans-serif" font-size="9.5">outlines + linking</text>
+    <text x="75" y="82" fill="#94a3b8" text-anchor="middle" font-family="system-ui,sans-serif" font-size="9">content-planner</text>
+  </g>
+
+  <defs>
+    <marker id="arrow1" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0 0 L 6 3 L 0 6 Z" fill="#f97316"/>
+    </marker>
+    <marker id="arrow2" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0 0 L 6 3 L 0 6 Z" fill="#7c3aed"/>
+    </marker>
+  </defs>
+</svg>
