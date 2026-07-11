@@ -1,12 +1,12 @@
 <h1 align="center">SEO Opportunity Finder</h1>
 
 <p align="center">
-  Continuously discovers content worth creating for a niche or website.<br/>
-  Turns trending keyword research into a full editorial calendar with outlines and internal links.
+  An AI agent automation workflow that continuously discovers content worth creating for a niche or website.<br/>
+  Turns trending keyword research into a full editorial calendar with outlines and internal links, built on Zo Computer and compatible with Claude AI.
 </p>
 
 <p align="center">
-  <img src="assets/zo-logo.png" alt="Zo Computer" width="64" />
+  <img src="assets/zo-logo.png" alt="Zo Computer" width="64" /> <img src="assets/claude-logo.png" alt="Claude AI" width="64" />
 </p>
 
 <p align="center">
@@ -22,6 +22,9 @@
 <p align="center">
   <img alt="google search console: optional" src="https://img.shields.io/badge/google__search__console-optional-f9ab00" /> <img alt="external APIs: none" src="https://img.shields.io/badge/external%20APIs-none-brightgreen" />
 </p>
+<p align="center">
+  <img alt="model: Claude AI" src="https://img.shields.io/badge/model-Claude%20AI-CC785C?logo=claude&logoColor=white" />
+</p>
 
 ## Table of Contents
 
@@ -35,7 +38,7 @@
 
 ## Overview
 
-Continuously discovers content worth creating for a niche or website. A three-stage pipeline researches trending questions and scores keyword competition, clusters the results into content topics, then turns those clusters into an editorial calendar with blog outlines, suggested titles, and internal linking recommendations. Runs entirely on free, built-in Zo tools and already-connected catalog integrations, no paid third-party SEO API required.
+Continuously discovers content worth creating for a niche or website. This AI agent automation workflow runs a three-stage pipeline that researches trending questions and scores keyword competition, clusters the results into content topics, then turns those clusters into an editorial calendar with blog outlines, suggested titles, and internal linking recommendations. Runs entirely on free, built-in Zo Computer tools and already-connected catalog integrations, no paid third-party SEO API required. Every skill is also compatible with Claude AI or any agentic framework, not just Zo's own routing.
 
 ## Features
 
@@ -69,6 +72,14 @@ If you'd rather install by hand:
 3. (Optional) In a chat, ask Zo to create a persona for this project using the exact text in `file persona.md` so you don't have to restate the pipeline every time.
 4. (Optional) Connect Google Search Console under Integrations if you want site-specific query data for a website you own, this is the only optional integration; no other API key is required or supported.
 5. Try it: paste one of the examples from `file starter-prompts.md` into a chat.
+
+### Claude AI path
+
+The three skills (`seo-research`, `keyword-clustering`, `content-planner`) are plain `SKILL.md` files with no Zo-specific dependencies, so they also run under Claude AI:
+
+1. Copy the `Skills/seo-research/`, `Skills/keyword-clustering/`, and `Skills/content-planner/` folders into wherever your Claude AI setup reads skills/instructions from (e.g. a project folder for Claude Code, or attached as reference files in Claude Desktop/the Anthropic API).
+2. Give Claude AI the same three stages in order, using the niche/website and cadence parameters below as inputs, and file-based handoff between stages (see Usage below) instead of Zo's built-in tools for web reads/searches.
+3. No API key or extra sign-up beyond your existing Claude AI access is required. Google Search Console access won't be available outside Zo, the pipeline just skips that optional step.
 
 ## Configuration
 
@@ -104,7 +115,8 @@ Zo-Automations/seo-opportunity-finder/
 ├── starter-prompts.md                # example prompts
 ├── assets/
 │   ├── pipeline-diagram.svg          # README header pipeline diagram
-│   └── zo-logo.png                   # Zo Computer logo used in this README
+│   ├── zo-logo.png                   # Zo Computer logo used in this README
+│   └── claude-logo.png               # Claude AI logo used in this README
 └── Skills/
     ├── seo-research/
     │   └── SKILL.md
